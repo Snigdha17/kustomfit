@@ -2,7 +2,6 @@
 
 .products-wrapper {
   display: grid;
-  /* grid-template-columns: repeat(8, 1fr); */
   grid-template-areas:
     "filter filter prod prod prod prod prod prod"
     "filter filter prod prod prod prod prod prod";

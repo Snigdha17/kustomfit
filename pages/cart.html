@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="../index.html" class="site-nav-logo">
+          <ion-icon name="cut"></ion-icon>
+          kustomfit
+        </a>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" class="search-input" />
+          <button type="submit" class="search-button">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+        <button class="nav-menu" id="nav-menu">
+          <ion-icon class="hamburger-icon" name="menu-outline"></ion-icon>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a class="nav-link" href="./login.html">Login</a></li>
+          <li>
+            <button class="icon-btn">
+              <a class="nav-link" href="./wishlist.html"
+                ><ion-icon class="btn-icon" name="heart-outline"></ion-icon
+              ></a>
+              <span class="notif-badge">2</span>
+            </button>
+          </li>
+          <li>
+            <button class="icon-btn">
+              <a class="nav-link" href="./cart.html"
+                ><ion-icon class="btn-icon" name="cart-outline"></ion-icon
+              ></a>
+              <span class="notif-badge">5</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cart-display">
+      <div class="heading-xs centered-text cart-heading">My Cart(2)</div>
+      <section class="checkout-items-display mg-bottom-m">
+        <div class="card-horizontal">
+          <div class="left-aligned-image-container">
+            <img
+              class="card-image img-responsive"
+              src="../assets/images/product-2.jpeg"
+              alt="woman in red dress"
+            />
+          </div>
+          <div class="card-content">
+            <div class="heading-xxs">Floral midi dress</div>
+            <div class="para-s">Floral midi dress in cotton in green</div>
+            <div class="para-xs">Sold by: kustomfit</div>
+            <p class="para-s"><strong>$49.99</strong> <del>$69.99</del></p>
+
+            <div class="quantity-button">
+              <h5>Quantity:</h5>
+              <button class="decrement-btn">-</button>
+              <div class="quantity-text para-m">0</div>
+              <button class="increment-btn">+</button>
+            </div>
+            <div class="card-buttons">
+              <button class="btn btn-primary">Remove from Cart</button>
+              <button class="btn btn-secondary">Move to WishList</button>
+              <button class="icon-btn">
+                <a href="#"
+                  ><ion-icon
+                    class="btn-icon"
+                    name="share-social-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+            <div class="text-badge card-badge">NEW</div>
+          </div>
+        </div>
+
+        <div class="card-horizontal">
+          <div class="left-aligned-image-container">
+            <img
+              class="card-image img-responsive"
+              src="../assets/images/product-1.jpeg"
+              alt="woman in red dress"
+            />
+          </div>
+          <div class="card-content">
+            <h2 class="heading-xxs">Chiffon Red Gown</h2>
+            <div class="para-s">Red floor length gown in chiffon</div>
+            <div class="para-xs">Sold by: kustomfit</div>
+            <p class="para-s"><strong>$74.99</strong> <del>$89.99</del></p>
+            <div class="quantity-button">
+              <h5>Quantity:</h5>
+              <button class="decrement-btn">-</button>
+              <div class="quantity-text para-m">0</div>
+              <button class="increment-btn">+</button>
+            </div>
+            <div class="card-buttons">
+              <button class="btn btn-primary">Remove from Cart</button>
+              <button class="btn btn-secondary">Move to WishList</button>
+              <button class="icon-btn">
+                <a href="#"
+                  ><ion-icon
+                    class="btn-icon"
+                    name="share-social-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+            <div class="text-badge card-badge">NEW</div>
+          </div>
+        </div>
+      </section>
+      <section class="order-summary-display">
+        <div class="order-section">
+          <div class="price-heading">PRICE DETAILS</div>
+          <div class="final-price">
+            <div class="price-title">Price(2 items)</div>
+            <div>$129.87</div>
+          </div>
+          <div class="final-discount">
+            <div class="discount-title">Discount</div>
+            <div>$29.87</div>
+          </div>
+          <div class="delivery-charges">
+            <div class="delivery-title">Delivery Charges</div>
+            <div>$29.87</div>
+          </div>
+          <div class="total-amount">
+            <div class="amount-title">TOTAL AMOUNT</div>
+            <div>$129.87</div>
+          </div>
+          <div>You will save $20 on this order</div>
+          <button class="btn btn-primary order-button">PLACE ORDER</button>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-text mg-bottom-xs">
+        Made with <ion-icon name="heart"></ion-icon> by Snigdha Kamal
+      </p>
+      <ul class="social-icons mg-bottom-xs">
+        <li>
+          <a class="social-link" href="https://github.com/Snigdha17"
+            ><ion-icon name="logo-github" class="social-icon"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/snigdhakamal/"
+            ><ion-icon name="logo-linkedin" class="social-icon"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a class="social-link" href="https://twitter.com/snkamal1794"
+            ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="copyright-text">| &copy;2022 Kustomize |</p>
+    </footer>
+    <script src="../assets/scripts/navbar.js"></script>
+    <script src="../assets/scripts/products.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

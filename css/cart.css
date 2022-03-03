@@ -1,0 +1,120 @@
+@import url("../style.css");
+
+.cart-display {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+    "heading heading heading heading heading heading heading heading"
+    "products products products products products order order order "
+    "products products products products products order order order";
+  margin: 4.8rem auto;
+  max-width: 130rem;
+}
+
+.cart-heading {
+  grid-area: heading;
+  margin-bottom: 4.8rem;
+}
+
+.checkout-items-display {
+  grid-area: products;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-horizontal {
+  border-radius: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-horizontal .card-image {
+  border-radius: 0;
+}
+
+.quantity-button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.quantity-text {
+  border: 1px solid var(--medium-gray);
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.5rem;
+}
+
+.increment-btn,
+.decrement-btn {
+  border: 1px solid var(--medium-gray);
+  padding: 1.6rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.increment-btn:hover,
+.decrement-btn:hover {
+  background-color: var(--light-gray);
+}
+
+/* ORDER section */
+
+.order-summary-display {
+  grid-area: order;
+  padding: 4rem;
+  margin: 0 4rem;
+  box-shadow: var(--box-shadow-bottom);
+  position: sticky;
+  top: 0;
+  font-size: 1.6rem;
+  align-self: start;
+}
+
+.order-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.price-heading,
+.total-amount,
+.delivery-charges {
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+.price-heading,
+.total-amount {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.final-price,
+.final-discount,
+.delivery-charges,
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1060px) {
+  .cart-display {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "heading"
+      "products"
+      "order";
+  }
+
+  .checkout-items-display .card-buttons {
+    justify-content: start;
+  }
+}

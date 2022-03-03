@@ -1,0 +1,66 @@
+.search-bar {
+  width: 30%;
+  display: flex;
+  box-shadow: var(--box-shadow-bottom);
+}
+
+.search-input {
+  width: 100%;
+  border: 1px solid var(--demo-color-1);
+  border-right: none;
+  padding: 0.5rem;
+  height: 4rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  color: var(--medium-gray);
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+.search-input:focus {
+  color: var(--dark-gray);
+}
+
+.search-button {
+  width: 5rem;
+  height: 4rem;
+  border: 1px solid var(--demo-color-1);
+  background: var(--light-gray);
+  text-align: center;
+  color: var(--dark-gray);
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.nav-link .btn-icon {
+  color: var(--white);
+}
+
+.site-nav-logo:link,
+.site-nav-logo:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--white);
+  font-size: 2.4rem;
+  text-decoration: none;
+  padding: 12px 15px;
+  transition: all 0.1s;
+  font-weight: 600;
+}
+
+.heading-xxs {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.icon-btn {
+  position: relative;
+}
+
+.icon-btn .btn-icon,
+.notif-badge {
+  height: 3.2rem;
+  width: 3.2rem;
+}

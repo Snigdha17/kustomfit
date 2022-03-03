@@ -1,0 +1,39 @@
+@import url("../style.css");
+
+.footer {
+  background-color: var(--demo-color-1);
+  padding: 3.2rem 0;
+  z-index: 1000;
+  color: var(--white);
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.copyright-text {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.social-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.social-link:hover {
+  color: var(--dark-gray);
+}

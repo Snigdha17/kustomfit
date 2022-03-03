@@ -1,0 +1,15 @@
+@import url("../style.css");
+
+.main-heading {
+  margin: 6.4rem auto auto 0;
+  color: var(--dark-gray);
+}
+
+.wishlist-display-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  max-width: 130rem;
+  max-width: 130rem;
+  margin: 8.4rem auto;
+}

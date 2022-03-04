@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Snigdha Kamal" />
+    <meta name="description" content="" />
+    <meta name="tags" content="" />
+    <title>kustomfit | Luxury E-commerce online store</title>
+    <link rel="stylesheet" href="../css/products.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="../index.html" class="site-nav-logo">
+          <ion-icon name="cut"></ion-icon>
+          kustomfit
+        </a>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" class="search-input" />
+          <button type="submit" class="search-button">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+        <button class="nav-menu" id="nav-menu">
+          <ion-icon class="hamburger-icon" name="menu-outline"></ion-icon>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a class="nav-link" href="./login.html">Login</a></li>
+          <li>
+            <button class="icon-btn">
+              <a class="nav-link" href="./wishlist.html"
+                ><ion-icon class="btn-icon" name="heart-outline"></ion-icon
+              ></a>
+              <span class="notif-badge">2</span>
+            </button>
+          </li>
+          <li>
+            <button class="icon-btn">
+              <a class="nav-link" href="./cart.html"
+                ><ion-icon class="btn-icon" name="cart-outline"></ion-icon
+              ></a>
+              <span class="notif-badge">5</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="products-wrapper">
+      <section class="products-filter">
+        <div class="filter-section">
+          <div class="filter-heading">
+            <div class="filter-title">Filters</div>
+            <a href="#" class="clear-filter-button">Clear</a>
+          </div>
+
+          <div class="price-section">
+            <div class="price-title">Price</div>
+            <div class="container">
+              <input type="range" list="price-list" />
+              <datalist class="price-list">
+                <option value="0" label="0"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100"></option>
+              </datalist>
+            </div>
+          </div>
+          <div class="categories-section">
+            <div class="category-title">Category</div>
+            <div>
+              <input
+                type="checkbox"
+                id="women-clothing"
+                name="women-clothing"
+              />
+              <label for="women-clothing">Women clothing</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="girl-clothing" name="girl-clothing" />
+              <label for="girl-clothing">Girls clothing</label>
+            </div>
+          </div>
+
+          <div class="rating-section">
+            <div class="rating-title">Rating</div>
+            <div>
+              <input
+                type="radio"
+                id="above-four"
+                name="rating"
+                value="above-four"
+                checked
+              />
+              <label for="above-four">4 stars & above</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="above-three"
+                name="rating"
+                value="above-three"
+              />
+              <label for="above-three">3 stars & above</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="above-two"
+                name="rating"
+                value="above-two"
+              />
+              <label for="above-two">2 stars & above</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="above-one"
+                name="rating"
+                value="above-one"
+              />
+              <label for="above-one">1 star & above</label>
+            </div>
+          </div>
+
+          <div class="sort-section">
+            <div class="sort-title">Sort By</div>
+            <a href="#">Prices - Low to High</a>
+            <a href="#">Prices - High to Low</a>
+          </div>
+        </div>
+      </section>
+      <section class="products-display-container">
+        <div class="heading-xs mg-bottom-s">
+          Showing all products <span class="para-s">(Showing 8 products)</span>
+        </div>
+        <div class="display-section">
+          <div class="card-vertical grow">
+            <div class="card-image-container">
+              <img
+                class="card-image img-responsive"
+                src="../assets/images/product-1.jpeg"
+                alt="woman in red dress"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="heading-xxs">Chiffon Red Gown</h2>
+              <div class="para-s">Red floor length gown in chiffon</div>
+              <div class="para-xs">Sold by: kustomfit</div>
+              <p class="para-s"><strong>$74.99</strong> <del>$89.99</del></p>
+              <div class="card-buttons">
+                <button class="btn btn-primary btn-primary-with-icon">
+                  <ion-icon class="btn-icon" name="cart"></ion-icon>
+                  Add To Cart
+                </button>
+                <button class="icon-btn">
+                  <a href="javascript:void(0)"
+                    ><ion-icon
+                      class="btn-icon"
+                      name="share-social-outline"
+                    ></ion-icon
+                  ></a>
+                </button>
+              </div>
+              <div class="text-badge card-badge">NEW</div>
+            </div>
+            <div class="wishlist-btn">
+              <button class="icon-btn">
+                <a href="javascript:void(0)"
+                  ><ion-icon
+                    class="btn-icon wishlist-icon"
+                    name="heart-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-vertical grow">
+            <div class="card-image-container">
+              <img
+                class="card-image img-responsive"
+                src="../assets/images/product-2.jpeg"
+                alt="woman in red dress"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="heading-xxs">Floral midi dress</h2>
+              <div class="para-s">Floral midi dress in cotton in green</div>
+              <div class="para-xs">Sold by: kustomfit</div>
+              <p class="para-s"><strong>$49.99</strong> <del>$69.99</del></p>
+              <div class="card-buttons">
+                <button class="btn btn-primary btn-primary-with-icon">
+                  <ion-icon class="btn-icon" name="cart"></ion-icon>
+                  Add To Cart
+                </button>
+                <button class="icon-btn">
+                  <a href="javascript:void(0)"
+                    ><ion-icon
+                      class="btn-icon"
+                      name="share-social-outline"
+                    ></ion-icon
+                  ></a>
+                </button>
+              </div>
+              <div class="text-badge card-badge">NEW</div>
+            </div>
+            <div class="wishlist-btn">
+              <button class="icon-btn">
+                <a href="javascript:void(0)"
+                  ><ion-icon
+                    class="btn-icon wishlist-icon"
+                    name="heart-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-vertical grow">
+            <div class="card-image-container">
+              <img
+                class="card-image img-responsive"
+                src="../assets/images/product-3.jpeg"
+                alt="woman in red dress"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="heading-xxs">Pink Jacquard Dress</h2>
+              <div class="para-s">Knee length pink dress in jacquard</div>
+              <div class="para-xs">Sold by: kustomfit</div>
+              <p class="para-s"><strong>$44.99</strong> <del>$60.99</del></p>
+              <div class="card-buttons">
+                <button class="btn btn-primary btn-primary-with-icon">
+                  <ion-icon class="btn-icon" name="cart"></ion-icon>
+                  Add To Cart
+                </button>
+                <button class="icon-btn">
+                  <a href="javascript:void(0)"
+                    ><ion-icon
+                      class="btn-icon"
+                      name="share-social-outline"
+                    ></ion-icon
+                  ></a>
+                </button>
+              </div>
+            </div>
+            <div class="wishlist-btn">
+              <button class="icon-btn">
+                <a href="javascript:void(0)"
+                  ><ion-icon
+                    class="btn-icon wishlist-icon"
+                    name="heart-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-vertical grow">
+            <div class="card-image-container">
+              <img
+                class="card-image img-responsive"
+                src="../assets/images/product-4.jpeg"
+                alt="woman in red dress"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="heading-xxs">Golden Party Gown</h2>
+              <div class="para-s">Floor length party gown in gold</div>
+              <div class="para-xs">Sold by: kustomfit</div>
+              <p class="para-s"><strong>$54.99</strong> <del>$83.99</del></p>
+              <div class="card-buttons">
+                <button class="btn btn-primary btn-primary-with-icon">
+                  <ion-icon class="btn-icon" name="cart"></ion-icon>
+                  Add To Cart
+                </button>
+                <button class="icon-btn">
+                  <a href="javascript:void(0)"
+                    ><ion-icon
+                      class="btn-icon"
+                      name="share-social-outline"
+                    ></ion-icon
+                  ></a>
+                </button>
+              </div>
+              <div class="text-badge card-badge">NEW</div>
+            </div>
+            <div class="wishlist-btn">
+              <button class="icon-btn">
+                <a href="javascript:void(0)"
+                  ><ion-icon
+                    class="btn-icon wishlist-icon"
+                    name="heart-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-vertical grow">
+            <div class="card-image-container">
+              <img
+                class="card-image img-responsive"
+                src="../assets/images/product-5.jpeg"
+                alt="woman in red dress"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="heading-xxs">Floral Red Dress</h2>
+              <div class="para-s">Knee length red dress in floral</div>
+              <div class="para-xs">Sold by: kustomfit</div>
+              <p class="para-s"><strong>$64.99</strong> <del>$89.99</del></p>
+              <div class="card-buttons">
+                <button class="btn btn-primary btn-primary-with-icon">
+                  <ion-icon class="btn-icon" name="cart"></ion-icon>
+                  Add To Cart
+                </button>
+                <button class="icon-btn">
+                  <a href="javascript:void(0)"
+                    ><ion-icon
+                      class="btn-icon"
+                      name="share-social-outline"
+                    ></ion-icon
+                  ></a>
+                </button>
+              </div>
+            </div>
+            <div class="wishlist-btn">
+              <button class="icon-btn">
+                <a href="javascript:void(0)"
+                  ><ion-icon
+                    class="btn-icon wishlist-icon"
+                    name="heart-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-vertical grow">
+            <div class="card-image-container">
+              <img
+                class="card-image img-responsive"
+                src="../assets/images/product-6.jpeg"
+                alt="woman in red dress"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="heading-xxs">Black Gown</h2>
+              <div class="para-s">Floor length black gown</div>
+              <div class="para-xs">Sold by: kustomfit</div>
+              <p class="para-s"><strong>$50.99</strong> <del>$70.99</del></p>
+              <div class="card-buttons">
+                <button class="btn btn-primary btn-primary-with-icon">
+                  <ion-icon class="btn-icon" name="cart"></ion-icon>
+                  Add To Cart
+                </button>
+                <button class="icon-btn">
+                  <a href="javascript:void(0)"
+                    ><ion-icon
+                      class="btn-icon"
+                      name="share-social-outline"
+                    ></ion-icon
+                  ></a>
+                </button>
+              </div>
+              <div class="text-badge card-badge">NEW</div>
+            </div>
+            <div class="wishlist-btn">
+              <button class="icon-btn">
+                <a href="javascript:void(0)"
+                  ><ion-icon
+                    class="btn-icon wishlist-icon"
+                    name="heart-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-vertical grow">
+            <div class="card-image-container">
+              <img
+                class="card-image img-responsive"
+                src="../assets/images/product-7.jpeg"
+                alt="woman in red dress"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="heading-xxs">Black Shimmer Dress</h2>
+              <div class="para-s">Floor length shimmer dress</div>
+              <div class="para-xs">Sold by: kustomfit</div>
+              <p class="para-s"><strong>$79.99</strong> <del>$99.99</del></p>
+              <div class="card-buttons">
+                <button class="btn btn-primary btn-primary-with-icon">
+                  <ion-icon class="btn-icon" name="cart"></ion-icon>
+                  Add To Cart
+                </button>
+                <button class="icon-btn">
+                  <a href="javascript:void(0)"
+                    ><ion-icon
+                      class="btn-icon"
+                      name="share-social-outline"
+                    ></ion-icon
+                  ></a>
+                </button>
+              </div>
+            </div>
+            <div class="wishlist-btn">
+              <button class="icon-btn">
+                <a href="javascript:void(0)"
+                  ><ion-icon
+                    class="btn-icon wishlist-icon"
+                    name="heart-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-vertical grow">
+            <div class="card-image-container">
+              <img
+                class="card-image img-responsive"
+                src="../assets/images/product-8.jpeg"
+                alt="woman in red dress"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="heading-xxs">White Midi Dress</h2>
+              <div class="para-s">Casual midi dress in white</div>
+              <div class="para-xs">Sold by: kustomfit</div>
+              <p class="para-s"><strong>$68.99</strong> <del>$88.99</del></p>
+              <div class="card-buttons">
+                <button class="btn btn-primary btn-primary-with-icon">
+                  <ion-icon class="btn-icon" name="cart"></ion-icon>
+                  Add To Cart
+                </button>
+                <button class="icon-btn">
+                  <a href="javascript:void(0)"
+                    ><ion-icon
+                      class="btn-icon"
+                      name="share-social-outline"
+                    ></ion-icon
+                  ></a>
+                </button>
+              </div>
+            </div>
+            <div class="wishlist-btn">
+              <button class="icon-btn">
+                <a href="javascript:void(0)"
+                  ><ion-icon
+                    class="btn-icon wishlist-icon"
+                    name="heart-outline"
+                  ></ion-icon
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-text mg-bottom-xs">
+        Made with <ion-icon name="heart"></ion-icon> by Snigdha Kamal
+      </p>
+      <ul class="social-icons mg-bottom-xs">
+        <li>
+          <a class="social-link" href="https://github.com/Snigdha17" target="_blank"
+            ><ion-icon name="logo-github" class="social-icon"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/snigdhakamal/" target="_blank"
+            ><ion-icon name="logo-linkedin" class="social-icon"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a class="social-link" href="https://twitter.com/snkamal1794" target="_blank"
+            ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="copyright-text">| &copy;2022 Kustomize |</p>
+    </footer>
+    <script src="../assets/scripts/navbar.js"></script>
+    <script src="../assets/scripts/products.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

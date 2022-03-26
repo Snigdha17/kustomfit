@@ -38,3 +38,4 @@ Locate the index.html file and open it in a browser
 - Javascript
 
 ## Live Demo
+https://kustomfit.netlify.app/
